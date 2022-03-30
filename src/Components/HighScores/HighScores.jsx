@@ -11,7 +11,7 @@ function HighScores({ userId }) {
     hard: [],
   });
 
-  const baseUrl = "http://localhost:5397";
+  const baseUrl = "https://timesweeper-api-v1.azurewebsites.net";
   const boardEndpoint = "/board";
   const recordsEndpoint = "/records";
   const resultEndpoint = "/result";
