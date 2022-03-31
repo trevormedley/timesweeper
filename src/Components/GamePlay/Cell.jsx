@@ -1,3 +1,4 @@
+import React from "react";
 import Bomb from "../../assets/bomb.png";
 import Flag from "../../assets/flag.png";
 import flagGreen from "../../assets/flagGreen.png";
