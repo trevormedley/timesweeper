@@ -28,7 +28,7 @@ function GameSetup({ userId, userName }) {
     setIsTimed(!isTimed);
   };
 
-  const baseUrl = "http://localhost:5397";
+  const baseUrl = "https://timesweeper-api-v1.azurewebsites.net";
   const boardEndpoint = "/board";
 
   // Game settings for each difficulty housed in one object

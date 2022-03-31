@@ -8,8 +8,6 @@ const settings = {
 
 export const generateBoard = body => {
 
-    console.log(body)
-
     const {click, options} = body;
     const {timed, difficulty, boardWidth, boardHeight, mineCount, customTime} = options;
     

@@ -203,7 +203,6 @@ function Board({
         isWin: win,
       })
       .then((res) => {
-        console.log(res.data);
         setResultData({
           bestTime: res.data.bestTime,
           difficulty: res.data.difficulty,
