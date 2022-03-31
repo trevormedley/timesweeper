@@ -30,8 +30,6 @@ function GameSetup({ userId, userName }) {
 
   const baseUrl = "http://localhost:5397";
   const boardEndpoint = "/board";
-  const recordsEndpoint = "/records";
-  const resultEndpoint = "/result";
 
   // Game settings for each difficulty housed in one object
   const difficultySettings = {
@@ -218,7 +216,7 @@ function GameSetup({ userId, userName }) {
               <h1>{displayMineCount}</h1>
             </div>
           </div>
-          {difficulty != "custom" ? (
+          {difficulty !== "custom" ? (
             <div className="flex flex-row justify-center items-center my-6">
               <input
                 className="mr-2 checked:bg-blue form-check-input h-5 w-5 rounded-none"

@@ -1,4 +1,4 @@
-import { Howl, Howler } from "howler";
+import { Howl } from "howler";
 import winChime from "../Sound/WinChime_1.mp3"
 import cellClick from "../Sound/cellClick_1.mp3"
 import flagClick from "../Sound/flagClick_1.mp3"

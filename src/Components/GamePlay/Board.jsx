@@ -51,7 +51,6 @@ function Board({
   const [restrictClick, setRestrictClick] = useState(false)
 
   const baseUrl = "https://timesweeper-api-v1.azurewebsites.net";
-  const boardEndpoint = "/board";
   const recordsEndpoint = "/records";
   const resultEndpoint = "/result";
 
@@ -93,7 +92,7 @@ function Board({
     gameOver(false);
   };
 
-  const { seconds, minutes, start, pause, restart } = useTimer({
+  const { seconds, minutes, pause, restart } = useTimer({
     autoStart: true,
     onExpire: () => timeExpire(),
   });
@@ -101,10 +100,8 @@ function Board({
   const {
     seconds: secondsUp,
     minutes: minutesUp,
-    hours: hoursUp,
     start: startUp,
     pause: pauseUp,
-    isRunning: isRunningUp,
     reset: resetUp
   } = useStopwatch({ autoStart: false });
 

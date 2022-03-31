@@ -11,10 +11,8 @@ function HighScores({ userId }) {
     hard: [],
   });
 
-  const baseUrl = "https://timesweeper-api-v1.azurewebsites.net";
-  const boardEndpoint = "/board";
+  const baseUrl = "https://timesweeper-api-v1.azurewebsites.net"
   const recordsEndpoint = "/records";
-  const resultEndpoint = "/result";
 
   useEffect(() => {
     axios
